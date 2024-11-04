@@ -6,7 +6,6 @@ import { PipesComponent } from './topics/pipes/pipes.component';
 import { SignalComponent } from './topics/signal/signal.component';
 import { ParentComponent } from './topics/component-communication/parent/parent.component';
 import { AnimationComponent } from './topics/animation/animation.component';
-import { LazyLoadingComponent } from './topics/lazy-loading/lazy-loading.component';
 import { DeferredLoadingComponent } from './topics/deferred-loading/deferred-loading.component';
 import { HttpImplementationComponent } from './topics/http-implementation/http-implementation.component';
 
@@ -46,7 +45,7 @@ export const routes: Routes = [
     },
     {
         path: 'lazy-loading',
-        loadChildren: () => import('./topics/lazy-loading/lazy.module').then(m => m.LazyModule)
+        loadComponent: () => import('./topics/lazy-loading/lazy-loading.component').then(c => c.LazyLoadingComponent)
     },
     {
         path: 'deferred-loading',
