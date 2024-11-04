@@ -1,0 +1,30 @@
+<div class="mt-3 p-2 bg-secondary text-white rounded">
+    <h1>HTTP Implementation</h1>
+</div>
+<div class="card mt-2">
+    <div class="card-header bg-success text-white">
+        <h6>HttpClient, inject method</h6>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-2">
+                <button class="btn btn-primary" (click)="getAllUser()">Get Users</button>
+            </div>
+            <div class="col-3">
+                <select class="form-select" [disabled]="userList.length === 0">
+                    @for (item of userList; track $index) {
+                        <option> {{item.name}}</option>
+                    }
+                </select>                
+                @if(loader){
+                    <div class="d-flex align-items-center">
+                        <strong>Loading...</strong>
+                        <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+                    </div>
+                }
+
+               
+            </div>
+        </div>
+    </div>
+</div>

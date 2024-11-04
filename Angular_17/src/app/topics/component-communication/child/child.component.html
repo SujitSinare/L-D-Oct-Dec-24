@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-12">
+        <h3>Child Component</h3>
+    </div>
+
+    <div class="col-12 pt-3">
+        <h5>Data from Parent Component: {{parentText}}</h5>
+    </div>
+
+    <div class="col-3 pt-3">
+        <input class="form-control" type="text" name="childusername" (change)="sendMessage()" [(ngModel)]="childusername"
+            placeholder="Enter child text here...">
+    </div>
+</div>

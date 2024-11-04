@@ -1,0 +1,15 @@
+<div class="mt-3 p-2 bg-secondary text-white rounded">
+    <h1>Angular animations</h1>
+</div>
+<div class="card mt-2">
+    <div class="card-body">
+        <div class="row">
+            <nav>
+                <button type="button" class="btn btn-primary" (click)="toggle()">Toggle Open/Close</button>
+            </nav>
+            <div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
+                <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
+            </div>
+        </div>
+    </div>
+</div>

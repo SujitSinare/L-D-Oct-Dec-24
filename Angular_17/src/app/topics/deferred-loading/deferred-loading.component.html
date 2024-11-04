@@ -1,0 +1,20 @@
+<div class="mt-3 p-2 bg-secondary text-white rounded">
+    <h1>Deferred Block</h1>
+</div>
+<div class="card mt-2">
+    <div class="card-body">
+        @defer {
+        <div>
+            <p>Deferrable views, also known as defer blocks, reduce the initial bundle size of your application by
+                deferring the loading of code that is not strictly necessary for the initial rendering of a page. This
+                often results in a faster initial load and improvement in Core Web Vitals (CWV), primarily Largest
+                Contentful Paint (LCP) and Time to First Byte (TTFB).</p>
+        </div>
+        } @placeholder (minimum 2000ms) {
+        <div class="d-flex align-items-center">
+            <strong>Loading...</strong>
+            <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+        </div>
+        }
+    </div>
+</div>

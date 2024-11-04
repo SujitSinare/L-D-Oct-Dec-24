@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">Angular 17</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/templateFormValidation']" routerLinkActive="router-link-active">Template
+            Form</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/reactiveFormValidation']" routerLinkActive="router-link-active">Reactive
+            Form</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/control-flow']" routerLinkActive="router-link-active">Control Flow</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/pipes']" routerLinkActive="router-link-active">Pipes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/signal']" routerLinkActive="router-link-active">Signal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/communication']" routerLinkActive="router-link-active">Communication</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/animation']" routerLinkActive="router-link-active">Animation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/lazy-loading']" routerLinkActive="router-link-active">Lazy Loading</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/deferred-loading']" routerLinkActive="router-link-active">Deferred
+            Block</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/http-implementation']" routerLinkActive="router-link-active">Http
+            Implementation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/image-optimization']" routerLinkActive="router-link-active">Image
+            Optimization</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control" class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container mt-2">
+  <router-outlet></router-outlet>
+</div>
